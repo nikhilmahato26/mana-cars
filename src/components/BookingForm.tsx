@@ -90,16 +90,8 @@ export const BookingForm = () => {
               {...register('vehicle', { required: true })}
               className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 focus:border-mana-yellow focus:ring-2 focus:ring-mana-yellow/20 outline-none transition-all appearance-none bg-white"
             >
-              <option value="">Select a car</option>
-              <option value="Swift">Swift</option>
-              <option value="Hyundai i10">Hyundai i10</option>
-              <option value="Hyundai i20">Hyundai i20</option>
-              <option value="Dzire">Dzire</option>
-              <option value="XL6">XL6</option>
-              <option value="Ertiga">Ertiga</option>
-              <option value="Innova Crysta">Innova Crysta</option>
-              <option value="XUV700">XUV700</option>
-              <option value="Thar">Thar</option>
+              <option value="">Select a vehicle</option>
+              <option value="Maruti Suzuki XL6">Maruti Suzuki XL6</option>
             </select>
           </div>
         </div>

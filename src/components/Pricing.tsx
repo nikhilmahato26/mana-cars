@@ -3,29 +3,18 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Check, MessageCircle, Phone } from 'lucide-react';
 
 const cityRides = [
-  { name: 'Swift', price: '₹15/km' },
-  { name: 'Dzire', price: '₹16/km' },
-  { name: 'i20', price: '₹16/km' },
-  { name: 'XL6', price: '₹18/km' },
-  { name: 'Ertiga', price: '₹18/km' },
-  { name: 'Innova', price: '₹22/km' },
-  { name: 'Thar', price: '₹25/km' },
+  { type: 'Maruti Suzuki XL6', price: '₹20/km' },
 ];
 
 const outstation = [
-  { name: 'Swift', price: '₹1800/day' },
-  { name: 'Dzire', price: '₹2000/day' },
-  { name: 'XL6', price: '₹2500/day' },
-  { name: 'Ertiga', price: '₹2500/day' },
-  { name: 'Innova', price: '₹3500/day' },
-  { name: 'Thar', price: '₹4000/day' },
+  { type: 'Maruti Suzuki XL6', price: '₹2500/day' },
 ];
 
 export const Pricing = () => {
   const [activeTab, setActiveTab] = useState<'city' | 'outstation'>('city');
 
-  const handleBook = (carName: string, price: string, type: string) => {
-    const text = `Hello MANA CARS, I want to book ${carName} for ${type} at ${price}.`;
+  const handleBook = (carType: string, price: string, type: string) => {
+    const text = `Hello MANA CARS, I want to book a ${carType} vehicle for ${type} at ${price}.`;
     window.open(`https://wa.me/917032343568?text=${encodeURIComponent(text)}`, '_blank');
   };
 
@@ -92,38 +81,47 @@ export const Pricing = () => {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: idx * 0.05 }}
                   key={idx}
-                  className="bg-white rounded-3xl p-6 border border-gray-100 premium-hover premium-shadow flex flex-col"
+                  className="bg-white rounded-3xl p-6 border flex flex-col relative border-mana-yellow/50 premium-hover premium-shadow ring-2 ring-mana-yellow/20"
                 >
-                  <h4 className="text-xl font-bold text-mana-dark mb-2">{item.name}</h4>
-                  <div className="text-3xl font-extrabold text-mana-yellow mb-6">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-green-500 text-white text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wide shadow-lg">
+                    Available
+                  </div>
+                  <h4 className="text-xl font-bold mb-2 text-mana-dark">{item.type}</h4>
+                  <div className="text-3xl font-extrabold mb-6 text-mana-yellow">
                     {item.price}
                   </div>
                   
                   <ul className="space-y-3 mb-8 flex-grow">
                     <li className="flex items-center gap-3 text-sm font-medium text-gray-600">
-                      <div className="bg-green-100 p-1 rounded-full"><Check size={14} className="text-green-600"/></div>
+                      <div className="p-1 rounded-full bg-green-100">
+                        <Check size={14} className="text-green-600"/>
+                      </div>
                       Well Maintained
                     </li>
                     <li className="flex items-center gap-3 text-sm font-medium text-gray-600">
-                      <div className="bg-green-100 p-1 rounded-full"><Check size={14} className="text-green-600"/></div>
+                      <div className="p-1 rounded-full bg-green-100">
+                        <Check size={14} className="text-green-600"/>
+                      </div>
                       Clean & Sanitized
                     </li>
                     <li className="flex items-center gap-3 text-sm font-medium text-gray-600">
-                      <div className="bg-green-100 p-1 rounded-full"><Check size={14} className="text-green-600"/></div>
+                      <div className="p-1 rounded-full bg-green-100">
+                        <Check size={14} className="text-green-600"/>
+                      </div>
                       24/7 Support
                     </li>
                   </ul>
 
                   <div className="space-y-3 mt-auto">
                     <button
-                      onClick={() => handleBook(item.name, item.price, activeTab)}
+                      onClick={() => handleBook(item.type, item.price, activeTab)}
                       className="w-full bg-mana-yellow text-mana-dark py-3 rounded-xl font-bold hover:bg-yellow-400 transition-colors"
                     >
                       Book Now
                     </button>
                     <div className="grid grid-cols-2 gap-3">
                       <button
-                        onClick={() => handleBook(item.name, item.price, activeTab)}
+                        onClick={() => handleBook(item.type, item.price, activeTab)}
                         className="flex items-center justify-center gap-2 border border-gray-200 py-2 rounded-xl text-sm font-bold text-gray-700 hover:bg-green-50 hover:text-green-600 transition-colors"
                       >
                         <MessageCircle size={16} /> WA
@@ -145,3 +143,4 @@ export const Pricing = () => {
     </section>
   );
 };
+

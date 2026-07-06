@@ -34,9 +34,40 @@ export const Hero = () => {
                 </span>
               </h1>
 
-              <p className="text-lg text-gray-600 mb-8 max-w-lg leading-relaxed">
+              <p className="text-lg text-gray-600 mb-6 max-w-lg leading-relaxed">
                 Affordable city rides, airport transfers, outstation trips, and premium rental cars across Hyderabad. Experience the journey you deserve.
               </p>
+
+              {/* Attach Your Car Promo */}
+              <div className="bg-mana-yellow/10 border border-mana-yellow/30 p-5 rounded-2xl mb-8 premium-shadow">
+                <h3 className="font-extrabold text-mana-dark text-lg mb-3 flex items-center gap-2">
+                  <Car className="text-mana-yellow" size={22} />
+                  Earn monthly and daily: ₹20k to ₹60k
+                </h3>
+                <ul className="space-y-2 mb-4 text-sm text-gray-700 font-medium">
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 mt-0.5">✓</span>
+                    Minimum 6 months attach agreement
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 mt-0.5">✓</span>
+                    ₹10k GPS charges and mechanic test charges
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-500 mt-0.5">✓</span>
+                    Every month settled on the 5th
+                  </li>
+                </ul>
+                <a
+                  href="https://wa.me/917032343568?text=Hello%20MANA%20CARS,%20I%20am%20interested%20in%20attaching%20my%20car."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-mana-dark text-white px-5 py-2.5 rounded-xl font-bold hover:bg-gray-800 transition-all hover:-translate-y-1 shadow-md text-sm"
+                >
+                  <MessageCircle size={18} />
+                  Attach Your Car
+                </a>
+              </div>
 
               <div className="flex flex-wrap items-center gap-4 mb-12">
                 <a
@@ -101,7 +132,7 @@ export const Hero = () => {
               {/* Main Image */}
               <div className="relative z-10 rounded-3xl overflow-hidden premium-shadow border-4 border-white aspect-[4/3] lg:aspect-square">
                 <img
-                  src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=2070"
+                  src="https://www.autovista.in/assets/img/new_cars_colour_variants/xl6-colour-nexa-blue.jpg"
                   alt="Premium Car"
                   className="w-full h-full object-cover"
                 />
