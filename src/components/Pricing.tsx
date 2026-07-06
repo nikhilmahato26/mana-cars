@@ -7,7 +7,7 @@ const cityRides = [
 ];
 
 const outstation = [
-  { type: 'Maruti Suzuki XL6', price: '₹2500/day' },
+  { type: 'Maruti Suzuki XL6', price: '₹3200/day' },
 ];
 
 export const Pricing = () => {
