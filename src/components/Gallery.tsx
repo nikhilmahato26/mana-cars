@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Heart, MessageCircle } from 'lucide-react';
 import { InstagramIcon as Instagram } from './Icons';

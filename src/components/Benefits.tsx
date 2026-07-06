@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle2, ShieldCheck, ThumbsUp, CalendarClock, MapPin, HeadphonesIcon, Award, Zap } from 'lucide-react';
 

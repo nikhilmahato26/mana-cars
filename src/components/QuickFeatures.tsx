@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Clock, Tag, UserCheck, Sparkles, Fuel, Headphones, Plane, Star, LayoutList } from 'lucide-react';
 

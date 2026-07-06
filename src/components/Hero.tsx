@@ -1,6 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Phone, Car, MessageCircle, MapPin, Calendar, Clock } from 'lucide-react';
+import { Phone, Car, MessageCircle, MapPin } from 'lucide-react';
 import { InstagramIcon as Instagram } from './Icons';
 import { BookingForm } from './BookingForm';
 

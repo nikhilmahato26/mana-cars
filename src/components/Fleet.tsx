@@ -1,6 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { MessageCircle, Phone, Settings, Fuel, Users, Wind, Briefcase, Zap, Shield, Navigation } from 'lucide-react';
+import { MessageCircle, Phone, Settings, Fuel, Users, Wind, Briefcase, Navigation } from 'lucide-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation as SwiperNav, Pagination } from 'swiper/modules';
 import 'swiper/css';

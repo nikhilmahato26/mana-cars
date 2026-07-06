@@ -1,4 +1,3 @@
-import React from 'react';
 import { CarFront, MapPin, Phone, Mail, ChevronRight } from 'lucide-react';
 import { InstagramIcon as Instagram } from './Icons';
 

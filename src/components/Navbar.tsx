@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X, CarFront, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
