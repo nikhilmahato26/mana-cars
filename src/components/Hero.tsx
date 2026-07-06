@@ -40,7 +40,10 @@ export const Hero = () => {
 
               {/* Attach Your Car Promo */}
               <div className="bg-mana-yellow/10 border border-mana-yellow/30 p-5 rounded-2xl mb-8 premium-shadow">
-                <h3 className="font-extrabold text-mana-dark text-lg mb-3 flex items-center gap-2">
+                <h2 className="text-2xl md:text-3xl font-black text-mana-dark mb-2">
+                  Attach your car earn money
+                </h2>
+                <h3 className="font-bold text-mana-dark text-lg mb-3 flex items-center gap-2">
                   <Car className="text-mana-yellow" size={22} />
                   Earn monthly and daily: ₹20k to ₹60k
                 </h3>
