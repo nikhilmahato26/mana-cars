@@ -91,7 +91,6 @@ export const BookingForm = () => {
               className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 focus:border-mana-yellow focus:ring-2 focus:ring-mana-yellow/20 outline-none transition-all appearance-none bg-white"
             >
               <option value="">Select a vehicle</option>
-              <option value="Maruti Suzuki XL6">Maruti Suzuki XL6</option>
             </select>
           </div>
         </div>
