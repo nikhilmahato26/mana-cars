@@ -9,7 +9,7 @@ export const Footer = () => {
           {/* Brand Info */}
           <div>
             <div className="flex items-center gap-2 mb-6">
-              <img src="/logo.jpeg" alt="Mana Cars Logo" className="w-14 h-14 rounded-full object-cover shadow-sm border-2 border-mana-yellow/50" />
+              <img src="/mana-cars-logo.jpg" alt="Mana Cars Logo" className="w-14 h-14 rounded-full object-cover shadow-sm border-2 border-mana-yellow/50" />
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Premium car rental service in Hyderabad. We offer affordable, clean, and reliable vehicles for all your travel needs.

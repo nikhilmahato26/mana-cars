@@ -31,7 +31,7 @@ export const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           <a href="#" className="flex items-center gap-2">
-            <img src="/logo.jpeg" alt="Mana Cars Logo" className="w-12 h-12 rounded-full object-cover shadow-sm border-2 border-mana-yellow/50" />
+            <img src="/mana-cars-logo.jpg" alt="Mana Cars Logo" className="w-12 h-12 rounded-full object-cover shadow-sm border-2 border-mana-yellow/50" />
           </a>
 
           {/* Desktop Nav */}
